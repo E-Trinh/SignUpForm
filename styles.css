@@ -141,6 +141,10 @@ html, body {
     box-shadow: 0px 0px 5px #1a1e50;
 }
 
+.field input:invalid {
+    border-color: #da1a1a;
+}
+
 button[type="submit"] {
     margin-left: 2%;
     background-color: #596D48;
