@@ -115,6 +115,11 @@ html, body {
     margin: 0%;
 }
 
+.fields-row h2 {
+    padding: 0%;
+    margin: 0%;
+}
+
 .field {
     flex: 1;
     display: flex;
@@ -139,6 +144,10 @@ html, body {
 .field input:focus {
     border-color: #4851d1;
     box-shadow: 0px 0px 5px #1a1e50;
+}
+
+.field input:invalid {
+    border-color: #da1a1a;
 }
 
 .field input:invalid {

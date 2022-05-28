@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet"> 
+    <script src="./script.js" defer></script>
     <title>Sign Up</title>
 </head>
 <body>
@@ -28,7 +29,7 @@
             <h2>You <em>know</em> you want to.</h2>
             <form>
                 <div class="fields-container">
-                    <div class="fields-row">
+                    <div class="fields-row" style="justify-content: left;">
                         <h2>Let's do this!</h2>
                     </div> 
                     <div class="fields-row">
@@ -54,11 +55,12 @@
                     <div class="fields-row">
                         <div class="field">
                             <label for="password">*Password</label>
-                            <input type="password" id="password" name="password" minlength="8" required>
+                            <input type="password" id="password" name="password" minlength="8" class="pass" onKeyup="checkPass()" required>
+                            <span class="passwordMessage"> </span>
                         </div>
                         <div class="field">
                             <label for="confirmPassword">*Confirm Password</label>
-                            <input type="password" id="confirmPassword" name="confirmPassword" minlength="8" required>
+                            <input type="password" id="confirmPassword" name="confirmPassword" minlength="8" class="pass" onKeyup="checkPass()" required>
                         </div>
                     </div>
                 </div>
