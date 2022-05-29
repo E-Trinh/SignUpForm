@@ -73,9 +73,9 @@ html, body {
 }
 
 .form-container {
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     height: 100%;
     width: 70%;
 }
@@ -181,6 +181,7 @@ button[type="submit"] {
     }
 
     .form-container {
+        overflow-y: visible;
         width: 100%;
         height: auto;
     }
